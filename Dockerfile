@@ -6,4 +6,4 @@ RUN apt-get update && \
 	sed -i "s:CustomLog.*:CustomLog /dev/stdout combined:g" /etc/apache2/sites-available/000-default.conf
 EXPOSE 80
 CMD [ "/usr/sbin/apachectl", "-D", "FOREGROUND" ]
-ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "/bin/bash" ] 
